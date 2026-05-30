@@ -1,11 +1,9 @@
 # File Server
 
-## Language / Язык
-
-| Language | Quick link |
-| --- | --- |
-| English | [Go to English section](#english) |
-| Русский | [Перейти к русскому разделу](#russian) |
+<p>
+  <a href="#english">English</a> |
+  <a href="#russian">Русский</a>
+</p>
 
 <a id="english"></a>
 
@@ -136,11 +134,11 @@ An example YAML configuration is located at `fileserver/config.yaml`.
 
 Supported parameters:
 
-| YAML field | Environment variable | Default value | Description |
-| --- | --- | --- | --- |
-| `port` | `FILESERVER_PORT` | required value | HTTP server port |
-| `upload_dir` | `FILESERVER_UPLOAD_DIR` | `./uploads` | directory for storing files |
-| `max_file_size` | `FILESERVER_MAX_FILE_SIZE` | `10485760` | maximum file size in bytes |
+| YAML field      | Environment variable       | Default value  | Description                 |
+| --------------- | -------------------------- | -------------- | --------------------------- |
+| `port`          | `FILESERVER_PORT`          | required value | HTTP server port            |
+| `upload_dir`    | `FILESERVER_UPLOAD_DIR`    | `./uploads`    | directory for storing files |
+| `max_file_size` | `FILESERVER_MAX_FILE_SIZE` | `10485760`     | maximum file size in bytes  |
 
 If the YAML file is unavailable, the service tries to read the configuration from environment variables.
 
@@ -340,11 +338,11 @@ curl -i http://localhost:28081/files
 
 Поддерживаемые параметры:
 
-| YAML-поле | Переменная окружения | Значение по умолчанию | Описание |
-| --- | --- | --- | --- |
-| `port` | `FILESERVER_PORT` | обязательное значение | порт HTTP-сервера |
-| `upload_dir` | `FILESERVER_UPLOAD_DIR` | `./uploads` | директория для хранения файлов |
-| `max_file_size` | `FILESERVER_MAX_FILE_SIZE` | `10485760` | максимальный размер файла в байтах |
+| YAML-поле       | Переменная окружения       | Значение по умолчанию | Описание                           |
+| --------------- | -------------------------- | --------------------- | ---------------------------------- |
+| `port`          | `FILESERVER_PORT`          | обязательное значение | порт HTTP-сервера                  |
+| `upload_dir`    | `FILESERVER_UPLOAD_DIR`    | `./uploads`           | директория для хранения файлов     |
+| `max_file_size` | `FILESERVER_MAX_FILE_SIZE` | `10485760`            | максимальный размер файла в байтах |
 
 Если YAML-файл недоступен, сервис пытается прочитать конфигурацию из переменных окружения.
 
