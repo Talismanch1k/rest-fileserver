@@ -1,5 +1,7 @@
 # File Server
 
+<img width="1280" height="720" alt="fileserver" src="https://github.com/user-attachments/assets/0bf2bd94-4fe7-4f67-91f0-18b7d5753378" />
+
 <p>
   <a href="#english">English</a> |
   <a href="#russian">Русский</a>
