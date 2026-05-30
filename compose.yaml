@@ -1,0 +1,19 @@
+services:
+  fileserver:
+    image: fileserver:latest
+    build: fileserver
+    restart: unless-stopped
+    ports:
+      - 28081:8080
+    volumes:
+      - ./fileserver/config.yaml:/config.yaml
+      - ./uploads:/data/uploads
+    environment:
+      - FILESERVER_PORT=8080
+      - FILESERVER_UPLOAD_DIR=/data/uploads
+
+  tests:
+    image: tests:latest
+    build: tests
+    restart: "no"
+    entrypoint: "true"
